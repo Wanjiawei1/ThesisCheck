@@ -11,7 +11,7 @@ def docx_to_pdf(docx_path, output_pdf_path):
 
 # 2. PDF -> 图片列表
 def pdf_to_images(pdf_path, dpi=200):
-    images = convert_from_path(pdf_path, dpi=dpi, poppler_path='/opt/homebrew/bin')
+    images = convert_from_path(pdf_path, dpi=dpi, poppler_path=r'D:\develop\poppler-24.08.0\Library\bin')
     print(f"PDF 转图片完成，共 {len(images)} 张")
     return images
 
